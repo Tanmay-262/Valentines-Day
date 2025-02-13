@@ -1,0 +1,65 @@
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6e6;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 5%;
+}
+
+h1 {
+    color: #ff4d4d;
+    font-size: 2rem;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+#yes {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#no {
+    background-color: #444;
+    color: white;
+}
+
+#yes:active, #no:active {
+    transform: scale(0.95);
+}
+
+.hidden {
+    display: none;
+}
+
+#gif-container {
+    margin-top: 20px;
+}
+
+#gif {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Heart Animation */
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+.heart {
+    position: absolute;
+    font-size: 20px;
+    animation: floatUp 4s linear infinite;
+}
